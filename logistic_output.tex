@@ -1,0 +1,60 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                        &   loan\_status    & \textbf{  No. Observations:  } &    29754    \\
+\textbf{Model:}                                &      Logit       & \textbf{  Df Residuals:      } &    29712    \\
+\textbf{Method:}                               &       MLE        & \textbf{  Df Model:          } &       41    \\
+\textbf{Date:}                                 & Sun, 04 Mar 2018 & \textbf{  Pseudo R-squ.:     } &  0.07905    \\
+\textbf{Time:}                                 &     14:08:21     & \textbf{  Log-Likelihood:    } &   -11667.   \\
+\textbf{converged:}                            &       True       & \textbf{  LL-Null:           } &   -12669.   \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                               & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$>|z|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{funded\_amnt}                          &   -1.493e-05  &      1.5e-05     &    -0.995  &         0.320        &    -4.43e-05    &     1.45e-05     \\
+\textbf{term}                                  &      -0.0194  &        0.003     &    -5.856  &         0.000        &       -0.026    &       -0.013     \\
+\textbf{int\_rate}                             &      -0.1161  &        0.017     &    -6.763  &         0.000        &       -0.150    &       -0.082     \\
+\textbf{installment}                           &       0.0004  &        0.001     &     0.881  &         0.378        &       -0.001    &        0.001     \\
+\textbf{grade}                                 &       0.0413  &        0.124     &     0.333  &         0.739        &       -0.202    &        0.284     \\
+\textbf{sub\_grade}                            &      -0.0199  &        0.140     &    -0.143  &         0.887        &       -0.294    &        0.254     \\
+\textbf{emp\_length}                           &      -0.0123  &        0.005     &    -2.472  &         0.013        &       -0.022    &       -0.003     \\
+\textbf{annual\_inc}                           &    7.156e-06  &     6.12e-07     &    11.701  &         0.000        &     5.96e-06    &     8.35e-06     \\
+\textbf{dti}                                   &      -0.0011  &        0.003     &    -0.383  &         0.702        &       -0.007    &        0.005     \\
+\textbf{delinq\_2yrs}                          &       0.0064  &        0.032     &     0.198  &         0.843        &       -0.057    &        0.070     \\
+\textbf{inq\_last\_6mths}                      &      -0.1277  &        0.010     &   -12.246  &         0.000        &       -0.148    &       -0.107     \\
+\textbf{open\_acc}                             &      -0.0066  &        0.005     &    -1.233  &         0.217        &       -0.017    &        0.004     \\
+\textbf{pub\_rec}                              &      -0.1194  &        0.103     &    -1.164  &         0.245        &       -0.320    &        0.082     \\
+\textbf{revol\_bal}                            &   -4.367e-06  &     9.02e-07     &    -4.841  &         0.000        &    -6.13e-06    &     -2.6e-06     \\
+\textbf{revol\_util}                           &      -0.0041  &        0.001     &    -5.332  &         0.000        &       -0.006    &       -0.003     \\
+\textbf{total\_acc}                            &       0.0019  &        0.002     &     0.811  &         0.417        &       -0.003    &        0.006     \\
+\textbf{pub\_rec\_bankruptcies}                &      -0.2095  &        0.122     &    -1.711  &         0.087        &       -0.450    &        0.030     \\
+\textbf{tax\_liens}                            &      34.0041  &     3.36e+07     &  1.01e-06  &         1.000        &    -6.58e+07    &     6.58e+07     \\
+\textbf{has\_employment}                       &       0.7333  &        5.817     &     0.126  &         0.900        &      -10.667    &       12.133     \\
+\textbf{issue\_month}                          &       0.0002  &        0.005     &     0.041  &         0.968        &       -0.010    &        0.010     \\
+\textbf{issue\_year}                           &       0.1063  &        0.023     &     4.665  &         0.000        &        0.062    &        0.151     \\
+\textbf{earliest\_cr\_line\_month}             &       0.0179  &        0.005     &     3.784  &         0.000        &        0.009    &        0.027     \\
+\textbf{earliest\_cr\_line\_year}              &       0.0013  &        0.003     &     0.435  &         0.663        &       -0.004    &        0.007     \\
+\textbf{home\_ownership\_NONE}                 &      -0.8326  &        1.206     &    -0.691  &         0.490        &       -3.196    &        1.531     \\
+\textbf{home\_ownership\_OTHER}                &      -0.4725  &        0.248     &    -1.906  &         0.057        &       -0.958    &        0.013     \\
+\textbf{home\_ownership\_OWN}                  &      -0.0387  &        0.067     &    -0.574  &         0.566        &       -0.171    &        0.094     \\
+\textbf{home\_ownership\_RENT}                 &      -0.0499  &        0.040     &    -1.247  &         0.212        &       -0.128    &        0.029     \\
+\textbf{purpose\_credit\_card}                 &      -0.0419  &        0.118     &    -0.355  &         0.723        &       -0.273    &        0.189     \\
+\textbf{purpose\_debt\_consolidation}          &      -0.2863  &        0.109     &    -2.638  &         0.008        &       -0.499    &       -0.074     \\
+\textbf{purpose\_educational}                  &      -0.6269  &        0.183     &    -3.434  &         0.001        &       -0.985    &       -0.269     \\
+\textbf{purpose\_home\_improvement}            &      -0.3275  &        0.123     &    -2.659  &         0.008        &       -0.569    &       -0.086     \\
+\textbf{purpose\_house}                        &      -0.3942  &        0.193     &    -2.042  &         0.041        &       -0.772    &       -0.016     \\
+\textbf{purpose\_major\_purchase}              &      -0.1207  &        0.134     &    -0.904  &         0.366        &       -0.382    &        0.141     \\
+\textbf{purpose\_medical}                      &      -0.5743  &        0.158     &    -3.640  &         0.000        &       -0.883    &       -0.265     \\
+\textbf{purpose\_moving}                       &      -0.6451  &        0.165     &    -3.910  &         0.000        &       -0.968    &       -0.322     \\
+\textbf{purpose\_other}                        &      -0.5334  &        0.115     &    -4.618  &         0.000        &       -0.760    &       -0.307     \\
+\textbf{purpose\_renewable\_energy}            &      -0.6564  &        0.347     &    -1.890  &         0.059        &       -1.337    &        0.024     \\
+\textbf{purpose\_small\_business}              &      -1.0789  &        0.123     &    -8.791  &         0.000        &       -1.319    &       -0.838     \\
+\textbf{purpose\_vacation}                     &      -0.5716  &        0.203     &    -2.810  &         0.005        &       -0.970    &       -0.173     \\
+\textbf{purpose\_wedding}                      &      -0.1158  &        0.162     &    -0.715  &         0.475        &       -0.433    &        0.202     \\
+\textbf{verification\_status\_Source Verified} &      -0.0177  &        0.046     &    -0.382  &         0.703        &       -0.109    &        0.073     \\
+\textbf{verification\_status\_Verified}        &      -0.0243  &        0.045     &    -0.545  &         0.586        &       -0.112    &        0.063     \\
+\bottomrule
+\end{tabular}
+% \caption{Logit Regression Results}
+\end{center}

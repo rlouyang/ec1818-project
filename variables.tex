@@ -1,0 +1,36 @@
+\begin{table}[!ht]
+\footnotesize
+\centering
+
+\begin{tabular}{p{5cm}p{10cm}}
+\toprule
+\textbf{Variable name} & \textbf{Description} \\ \midrule
+\texttt{funded\_amount} & The total amount committed to the loan \\
+\texttt{term} & The number of payments on the loan. Values are in months and can be either 36 or 60. \\
+\texttt{interest\_rate} & Interest rate on the loan \\
+\texttt{installment} & The monthly payment owed by the borrower \\
+\texttt{grade} \& \texttt{subgrade} & LendingClub-assigned loan (sub)grade, a measure of credit risk \\
+\texttt{employment\_length} & Employment length in years. Possible values are between 0 and 10 where 0 means less than one year and 10 means ten or more years. \\
+\texttt{home\_ownership} & The home ownership status provided by the borrower during registration. Values are: RENT, OWN, MORTGAGE, OTHER. \\
+\texttt{annual\_income} & The self-reported annual income provided by the borrower \\ 
+\texttt{verification\_status} & Whether income was verified by LendingClub \\
+\texttt{issue\_date} & The month in which the loan was funded \\
+\texttt{purpose} & A category provided by the borrower for the loan request \\
+\texttt{address\_state} & The state provided by the borrower \\
+\texttt{dti} & The borrower's total monthly debt payments (excluding mortgages) divided by the borrower's self-reported monthly income. \\
+\texttt{delinq\_2yrs} & The delinquencies in the past 2 years \\
+\texttt{earliest\_credit\_line} & The month the borrower's earliest reported credit line was opened \\
+\texttt{inquiries\_last\_6months} & The number of inquiries in the past 6 months, excluding auto and mortgage inquiries \\
+\texttt{open\_accounts} & The number of open credit lines in the borrower's credit file \\
+\texttt{pub\_rec} & Number of derogatory public records \\
+\texttt{revolving\_balance} & Total credit revolving balance \\
+\texttt{revolving\_utilization} & Revolving line utilization rate \\
+\texttt{total\_accounts} & The total number of credit lines currently in the borrower's credit file \\
+\texttt{pub\_rec\_bankruptcies} & Number of public record bankruptcies \\
+\texttt{tax\_liens} & Number of tax liens \\
+
+\bottomrule
+\end{tabular}
+\caption{Variables included in the dataset. Some variables were omitted if either no values for that variable were available, every loan in the dataset had the same value for that variable, or the variable became known only after the loan had originated. Data from \cite{lendingclub}.}
+\label{table:variables}
+\end{table}

@@ -1,0 +1,65 @@
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{caption}
+% \usepackage{subcaption}
+\usepackage{subfig}
+% \usepackage{subfigure}
+\usepackage[margin=1in]{geometry}
+% \usepackage{float}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{palatino}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage{minted}
+\usemintedstyle{manni}
+
+\pagestyle{fancy}
+\lhead{ECON 1818}
+\rhead{Richard Ouyang}
+
+\newcommand{\noin}{\noindent}    
+\newcommand{\logit}{\textrm{logit}} 
+\newcommand{\var}{\textrm{Var}}
+\newcommand{\cov}{\textrm{Cov}} 
+\newcommand{\corr}{\textrm{Corr}} 
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\Bern}{\textrm{Bern}}
+\newcommand{\Bin}{\textrm{Bin}}
+\newcommand{\Beta}{\textrm{Beta}}
+\newcommand{\Gam}{\textrm{Gamma}}
+\newcommand{\Expo}{\textrm{Expo}}
+\newcommand{\Pois}{\textrm{Pois}}
+\newcommand{\Unif}{\textrm{Unif}}
+
+\def\argmin{\operatornamewithlimits{arg\,min}}
+
+\newcommand{\given}{\,|\,}
+    
+\newmintedfile[python]{python}{
+    frame=lines,
+    framesep=2mm,
+    breaklines,
+    linenos, xleftmargin=16pt,
+} 
+        
+\newminted{python}{
+    frame=lines,
+    framesep=2mm,
+    breaklines,
+    linenos, xleftmargin=16pt
+}
+\AtBeginEnvironment{minted}{\singlespacing}
+        
+\newcommand{\graphics}[2]{
+    \begin{center}
+    \includegraphics[width=#2\textwidth]{#1}
+    \end{center}
+}
+
+\setlength{\headheight}{15pt} 

@@ -1,0 +1,65 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                        &     int\_rate     & \textbf{  R-squared:         } &     0.527   \\
+\textbf{Model:}                                &       OLS        & \textbf{  Adj. R-squared:    } &     0.526   \\
+\textbf{Method:}                               &  Least Squares   & \textbf{  F-statistic:       } &     893.8   \\
+\textbf{Date:}                                 & Sun, 04 Mar 2018 & \textbf{  Prob (F-statistic):} &     0.00    \\
+\textbf{Time:}                                 &     14:14:26     & \textbf{  Log-Likelihood:    } &   -70152.   \\
+\textbf{No. Observations:}                     &       29754      & \textbf{  AIC:               } & 1.404e+05   \\
+\textbf{Df Residuals:}                         &       29716      & \textbf{  BIC:               } & 1.407e+05   \\
+\textbf{Df Model:}                             &          37      & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                               & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$>|t|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{funded\_amnt}                          &       0.0001  &     2.61e-06     &    40.497  &         0.000        &        0.000    &        0.000     \\
+\textbf{term}                                  &       0.1317  &        0.002     &    83.256  &         0.000        &        0.129    &        0.135     \\
+\textbf{emp\_length}                           &      -0.0029  &        0.004     &    -0.657  &         0.511        &       -0.012    &        0.006     \\
+\textbf{annual\_inc}                           &    8.286e-07  &     2.45e-07     &     3.386  &         0.001        &     3.49e-07    &     1.31e-06     \\
+\textbf{dti}                                   &      -0.0111  &        0.003     &    -4.386  &         0.000        &       -0.016    &       -0.006     \\
+\textbf{delinq\_2yrs}                          &       1.3195  &        0.029     &    45.481  &         0.000        &        1.263    &        1.376     \\
+\textbf{inq\_last\_6mths}                      &       0.4117  &        0.010     &    40.796  &         0.000        &        0.392    &        0.431     \\
+\textbf{open\_acc}                             &       0.1149  &        0.005     &    24.198  &         0.000        &        0.106    &        0.124     \\
+\textbf{pub\_rec}                              &       0.9919  &        0.108     &     9.209  &         0.000        &        0.781    &        1.203     \\
+\textbf{revol\_bal}                            &   -6.277e-06  &     8.06e-07     &    -7.791  &         0.000        &    -7.86e-06    &     -4.7e-06     \\
+\textbf{revol\_util}                           &       0.0587  &        0.001     &    99.130  &         0.000        &        0.058    &        0.060     \\
+\textbf{total\_acc}                            &      -0.0388  &        0.002     &   -19.783  &         0.000        &       -0.043    &       -0.035     \\
+\textbf{pub\_rec\_bankruptcies}                &       0.1623  &        0.128     &     1.266  &         0.205        &       -0.089    &        0.414     \\
+\textbf{tax\_liens}                            &      -2.8342  &        2.562     &    -1.106  &         0.269        &       -7.857    &        2.188     \\
+\textbf{has\_employment}                       &    -139.8541  &        4.879     &   -28.666  &         0.000        &     -149.417    &     -130.291     \\
+\textbf{issue\_month}                          &      -0.0304  &        0.004     &    -6.904  &         0.000        &       -0.039    &       -0.022     \\
+\textbf{issue\_year}                           &      -0.4065  &        0.018     &   -23.001  &         0.000        &       -0.441    &       -0.372     \\
+\textbf{earliest\_cr\_line\_month}             &      -0.0008  &        0.004     &    -0.187  &         0.851        &       -0.009    &        0.007     \\
+\textbf{earliest\_cr\_line\_year}              &       0.0726  &        0.002     &    29.716  &         0.000        &        0.068    &        0.077     \\
+\textbf{home\_ownership\_NONE}                 &      -0.7389  &        1.810     &    -0.408  &         0.683        &       -4.287    &        2.809     \\
+\textbf{home\_ownership\_OTHER}                &       0.8945  &        0.260     &     3.443  &         0.001        &        0.385    &        1.404     \\
+\textbf{home\_ownership\_OWN}                  &       0.5526  &        0.059     &     9.343  &         0.000        &        0.437    &        0.669     \\
+\textbf{home\_ownership\_RENT}                 &       0.5026  &        0.035     &    14.283  &         0.000        &        0.434    &        0.572     \\
+\textbf{purpose\_credit\_card}                 &       0.1809  &        0.089     &     2.036  &         0.042        &        0.007    &        0.355     \\
+\textbf{purpose\_debt\_consolidation}          &       0.5820  &        0.082     &     7.132  &         0.000        &        0.422    &        0.742     \\
+\textbf{purpose\_educational}                  &       1.1506  &        0.171     &     6.714  &         0.000        &        0.815    &        1.487     \\
+\textbf{purpose\_home\_improvement}            &       0.7704  &        0.095     &     8.122  &         0.000        &        0.585    &        0.956     \\
+\textbf{purpose\_house}                        &       1.0238  &        0.166     &     6.167  &         0.000        &        0.698    &        1.349     \\
+\textbf{purpose\_major\_purchase}              &       0.6993  &        0.100     &     7.001  &         0.000        &        0.504    &        0.895     \\
+\textbf{purpose\_medical}                      &       0.7445  &        0.137     &     5.425  &         0.000        &        0.475    &        1.013     \\
+\textbf{purpose\_moving}                       &       0.8163  &        0.148     &     5.532  &         0.000        &        0.527    &        1.106     \\
+\textbf{purpose\_other}                        &       0.9655  &        0.090     &    10.773  &         0.000        &        0.790    &        1.141     \\
+\textbf{purpose\_renewable\_energy}            &       0.7278  &        0.320     &     2.276  &         0.023        &        0.101    &        1.354     \\
+\textbf{purpose\_small\_business}              &       1.5591  &        0.104     &    14.967  &         0.000        &        1.355    &        1.763     \\
+\textbf{purpose\_vacation}                     &       0.8691  &        0.170     &     5.115  &         0.000        &        0.536    &        1.202     \\
+\textbf{purpose\_wedding}                      &       0.7929  &        0.123     &     6.426  &         0.000        &        0.551    &        1.035     \\
+\textbf{verification\_status\_Source Verified} &       0.2282  &        0.040     &     5.724  &         0.000        &        0.150    &        0.306     \\
+\textbf{verification\_status\_Verified}        &       0.4020  &        0.039     &    10.298  &         0.000        &        0.326    &        0.479     \\
+\bottomrule
+\end{tabular}
+% \begin{tabular}{lclc}
+% \textbf{Omnibus:}       & 634.792 & \textbf{  Durbin-Watson:     } &     1.995  \\
+% \textbf{Prob(Omnibus):} &   0.000 & \textbf{  Jarque-Bera (JB):  } &   712.963  \\
+% \textbf{Skew:}          &   0.327 & \textbf{  Prob(JB):          } & 1.52e-155  \\
+% \textbf{Kurtosis:}      &   3.384 & \textbf{  Cond. No.          } &  3.22e+07  \\
+% \bottomrule
+% \end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
